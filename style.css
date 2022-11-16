@@ -26,6 +26,12 @@
         flex-direction: column;
     }
 }
+
+header {
+    border-bottom: #F5D547 solid 1px;
+    margin-bottom: 10px;
+}
+
 h1 {
     text-transform: uppercase;
     color: #F2542D;
@@ -51,16 +57,7 @@ h1 {
     font-weight: 600;
     font-size: 14px;
 }
-.nav-links::after{
-    content: "";
-    display: block;
-    margin: 0 auto;
-    margin-top: 5px;
-    width: 0;
-    height: 2px;
-    background: #F5D547;
-    transition: width 0.2s ease-in-out;
-}
+
 .nav-links a:hover {
     color: #F5D547;
     transition: width 0.2s ease-in-out;
@@ -68,4 +65,19 @@ h1 {
 
 .nav-links:hover::after {
     width: 2rem;
+}
+
+
+/* --- Style Main --- */
+.cover {
+    flex-direction: column;
+}
+
+.image-lien {
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border-radius: 3px;
 }
