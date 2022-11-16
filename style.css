@@ -11,6 +11,7 @@
     .flux {
         margin-left: 15px;
         margin-right: 15px;
+        margin-bottom: 10px;
     }
 }
 
@@ -147,4 +148,37 @@ img {
     left: 0;
     z-index: 100;
     transition: left 0.65s ease-out;
+}
+
+p a {
+    color:#F5D547
+}
+p a:hover {
+    color:#D8D8F6
+}
+
+#dessin, #chorale, #piano, #batterie {
+    color: #F5D547;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+
+/* --- Style footer --- */
+footer {
+    background-color: #F5D547;
+    flex-direction: column;
+    color: #05668D;
+}
+
+footer p {
+    margin-top: 10px;    
+}
+
+footer a {
+    display: inline;
+}
+
+footer a:hover {
+    color: #D8D8F6;
 }
