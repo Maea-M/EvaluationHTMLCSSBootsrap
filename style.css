@@ -1,0 +1,71 @@
+/* color */
+/* orange : F2542D
+/* jaune : F5D547
+/* gris : 4F5D75
+
+/* --- Style global --- */
+@media (max-width:576px) {
+    .flux {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+}
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* --- Style Header --- */
+@media (max-width:576px) {
+    .header {
+        margin-left: 15px;
+        margin-right: 15px;
+        flex-direction: column;
+    }
+}
+h1 {
+    text-transform: uppercase;
+    color: #F2542D;
+    font-size: 22px;
+    padding-bottom: 10px;
+}
+
+.logo {
+    width: 50px;
+    height: 50px;
+    padding-bottom: 10px;
+}
+
+.list-links {
+    display: flex;
+    column-gap: 30px;
+    align-items: center;
+    color: #F2542D;
+}
+
+.nav-links{
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.nav-links::after{
+    content: "";
+    display: block;
+    margin: 0 auto;
+    margin-top: 5px;
+    width: 0;
+    height: 2px;
+    background: #F5D547;
+    transition: width 0.2s ease-in-out;
+}
+.nav-links a:hover {
+    color: #F5D547;
+    transition: width 0.2s ease-in-out;
+}
+
+.nav-links:hover::after {
+    width: 2rem;
+}
